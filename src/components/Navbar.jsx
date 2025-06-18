@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <nav className="flex items-center justify-between py-6">
         <div className="flex flex-shrink-0 items-center">
-            <a href="https://meshanmiranda.github.io/portfolio/" aria-label="Home">
+            <a href="/portfolio" aria-label="Home">
                 <img src={logo} className="mx-2" width={50} height={33} alt="Logo"/>
             </a>
         </div>
