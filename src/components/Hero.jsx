@@ -51,7 +51,7 @@ const Hero = () => {
                 <motion.span variants={childVariants} className="bg-gradient-to-r from-stone-300 
                 to-stone-600 bg-clip-text text-3xl tracking-tighter text-transparent">Software Engineer - Intern</motion.span>
                 <motion.p variants={childVariants} className="my-2 max-w-lg py-6 text-xl leading-relaxed tracking-tighter">{HERO_CONTENT}</motion.p>
-                <motion.a variants={childVariants} href="/Meshan_Miranda_CV.pdf"
+                <motion.a variants={childVariants} href={`${import.meta.env.BASE_URL}Meshan_Miranda_CV.pdf`}
                     target="_blank"
                     rel="noopener noreferrer"
                     download
