@@ -10,6 +10,17 @@ const Navbar = () => {
     setMenuOpen(prev => !prev);
   };
 
+  const handleMobileNavClick = (e) => {
+    e.preventDefault();
+    const targetId = e.currentTarget.getAttribute("href");
+    const targetElement = document.querySelector(targetId);
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: "smooth" });
+    }
+    setTimeout(() => setMenuOpen(false), 1000);
+  };
+
+
   const menuVariants = {
     hidden: { opacity: 0, y: -10, transition: { duration: 0.2 } },
     visible: { opacity: 1, y: 0, transition: { duration: 0.3 } },
@@ -126,31 +137,11 @@ const Navbar = () => {
             variants={menuVariants}
             className="flex flex-col mt-4 space-y-2 text-base font-medium md:hidden"
           >
-            <li>
-              <a href="#hero" onClick={() => setMenuOpen(false)} className="text-blue-500 hover:underline">
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="#technologies" onClick={() => setMenuOpen(false)} className="text-white hover:text-blue-500">
-                Technologies
-              </a>
-            </li>
-            <li>
-              <a href="#projects" onClick={() => setMenuOpen(false)} className="text-white hover:text-blue-500">
-                Projects
-              </a>
-            </li>
-            <li>
-              <a href="#experience" onClick={() => setMenuOpen(false)} className="text-white hover:text-blue-500">
-                Experience
-              </a>
-            </li>
-            <li>
-              <a href="#contact" onClick={() => setMenuOpen(false)} className="text-white hover:text-blue-500">
-                Contact
-              </a>
-            </li>
+            <li><a href="#hero" onClick={handleMobileNavClick} className="text-blue-500 hover:underline">Home</a></li>
+            <li><a href="#technologies" onClick={handleMobileNavClick} className="text-white hover:text-blue-500">Technologies</a></li>
+            <li><a href="#projects" onClick={handleMobileNavClick} className="text-white hover:text-blue-500">Projects</a></li>
+            <li><a href="#experience" onClick={handleMobileNavClick} className="text-white hover:text-blue-500">Experience</a></li>
+            <li><a href="#contact" onClick={handleMobileNavClick} className="text-white hover:text-blue-500">Contact</a></li>
           </motion.ul>
         )}
       </AnimatePresence>
