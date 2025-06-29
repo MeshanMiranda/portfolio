@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("#hero");
 
   const toggleMenu = () => {
     setMenuOpen(prev => !prev);
@@ -14,12 +15,35 @@ const Navbar = () => {
     e.preventDefault();
     const targetId = e.currentTarget.getAttribute("href");
     const targetElement = document.querySelector(targetId);
+    setActiveSection(targetId);
+    
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: "smooth" });
+
+      // Wait one frame to ensure scrolling started, then close menu
+      requestAnimationFrame(() => {
+        setMenuOpen(false);
+      });
+    } else {
+      setMenuOpen(false); // fallback if no element found
+    }
+  };
+
+  const handleNavClick = (e) => {
+    e.preventDefault();
+    const targetId = e.currentTarget.getAttribute("href");
+    setActiveSection(targetId); // update state
+
+    const targetElement = document.querySelector(targetId);
     if (targetElement) {
       targetElement.scrollIntoView({ behavior: "smooth" });
     }
-    setTimeout(() => setMenuOpen(false), 1000);
-  };
 
+    // Optional mobile close
+    if (window.innerWidth < 768) {
+      setMenuOpen(false);
+    }
+  };
 
   const menuVariants = {
     hidden: { opacity: 0, y: -10, transition: { duration: 0.2 } },
@@ -29,7 +53,7 @@ const Navbar = () => {
 
 
   return (
-    <nav className="flex items-center justify-between flex-wrap py-6 px-4 md:pr-10 mt-4">
+    <nav className="flex items-center justify-between flex-wrap py-3 md:pt-5 md:px-4  md:pr-10 ">
       {/* Social Media Icons */}
       <div className="hidden md:flex md:items-center flex items-center gap-4 text-2xl">
         <a
@@ -149,11 +173,71 @@ const Navbar = () => {
       {/* Desktop Menu */}
       <div className="hidden md:flex md:items-center">
         <ul className="flex space-x-8 text-base font-medium">
-          <li><a href="#hero" className="text-blue-700 dark:text-blue-500 hover:underline">Home</a></li>
-          <li><a href="#technologies" className="text-gray-900 dark:text-white hover:text-blue-700 dark:hover:text-blue-500">Technologies</a></li>
-          <li><a href="#projects" className="text-gray-900 dark:text-white hover:text-blue-700 dark:hover:text-blue-500">Projects</a></li>
-          <li><a href="#experience" className="text-gray-900 dark:text-white hover:text-blue-700 dark:hover:text-blue-500">Experience</a></li>
-          <li><a href="#contact" className="text-gray-900 dark:text-white hover:text-blue-700 dark:hover:text-blue-500">Contact</a></li>
+          <li>
+            <a
+              href="#hero"
+              onClick={handleNavClick}
+              className={`${
+                activeSection === "#hero"
+                  ? "text-blue-700 dark:text-blue-500"
+                  : "text-gray-900 dark:text-white hover:text-blue-700 dark:hover:text-blue-500"
+              }`}
+            >
+              Home
+            </a>
+          </li>
+          <li>
+            <a
+              href="#technologies"
+              onClick={handleNavClick}
+              className={`${
+                activeSection === "#technologies"
+                  ? "text-blue-700 dark:text-blue-500"
+                  : "text-gray-900 dark:text-white hover:text-blue-700 dark:hover:text-blue-500"
+              }`}
+            >
+              Technologies
+            </a>
+          </li>
+          <li>
+            <a
+              href="#projects"
+              onClick={handleNavClick}
+              className={`${
+                activeSection === "#projects"
+                  ? "text-blue-700 dark:text-blue-500"
+                  : "text-gray-900 dark:text-white hover:text-blue-700 dark:hover:text-blue-500"
+              }`}
+            >
+              Projects
+            </a>
+          </li>
+          <li>
+            <a
+              href="#experience"
+              onClick={handleNavClick}
+              className={`${
+                activeSection === "#experience"
+                  ? "text-blue-700 dark:text-blue-500"
+                  : "text-gray-900 dark:text-white hover:text-blue-700 dark:hover:text-blue-500"
+              }`}
+            >
+              Experience
+            </a>
+          </li>
+          <li>
+            <a
+              href="#contact"
+              onClick={handleNavClick}
+              className={`${
+                activeSection === "#contact"
+                  ? "text-blue-700 dark:text-blue-500"
+                  : "text-gray-900 dark:text-white hover:text-blue-700 dark:hover:text-blue-500"
+              }`}
+            >
+              Contact
+            </a>
+          </li>
         </ul>
       </div>
     </nav>
