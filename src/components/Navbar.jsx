@@ -38,11 +38,6 @@ const Navbar = () => {
     if (targetElement) {
       targetElement.scrollIntoView({ behavior: "smooth" });
     }
-
-    // Optional mobile close
-    if (window.innerWidth < 768) {
-      setMenuOpen(false);
-    }
   };
 
   const menuVariants = {

@@ -1,9 +1,9 @@
 import { DiRedis } from "react-icons/di"
-import { FaCode } from "react-icons/fa"
+import { FaNodeJs } from "react-icons/fa"
 import { RiJavaFill, RiReactjsLine } from "react-icons/ri"
 import { SiJavascript, SiMongodb, SiMysql, SiOracle, SiPhp } from "react-icons/si"
 import { TbBrandJavascript } from "react-icons/tb"
-import { SiPython, SiAndroidstudio, SiAdobephotoshop } from "react-icons/si"
+import { SiPython, SiAndroidstudio, SiAdobephotoshop, SiTailwindcss  } from "react-icons/si"
 import { motion } from "framer-motion"
 
 const iconVariants = (duration) => ({
@@ -84,6 +84,24 @@ const Technologies = () => {
             animate="animate"
             variants={iconVariants(2.5)} className="p-4">
             <SiAdobephotoshop className="text-6xl text-blue-700" />
+            </motion.div>
+
+            <motion.div
+                initial="initial"
+                animate="animate"
+                variants={iconVariants(3)}
+                className="p-4"
+            >
+                <FaNodeJs className="text-6xl text-green-600" />
+            </motion.div>
+
+            <motion.div
+                initial="initial"
+                animate="animate"
+                variants={iconVariants(3.5)}
+                className="p-4"
+            >
+                <SiTailwindcss className="text-6xl text-cyan-500" />
             </motion.div>
 
         </motion.div>
