@@ -1,5 +1,29 @@
 import {PROJECTS} from "../constants"
 import { motion } from "framer-motion"
+import { useState } from "react";
+
+const ProjectDescription = ({ description }) => {
+  const [expanded, setExpanded] = useState(false);
+
+  const toggleReadMore = () => setExpanded(!expanded);
+
+  return (
+    <div className="mb-4 text-stone-400">
+      <p className={`${expanded ? '' : 'line-clamp-3 md:line-clamp-none'}`}>
+        {description}
+      </p>
+
+      {/* Show toggle only on mobile */}
+      <button
+        onClick={toggleReadMore}
+        className="mt-2 text-blue-500 font-medium md:hidden"
+      >
+        {expanded ? 'Show less' : 'Read more'}
+      </button>
+    </div>
+  );
+};
+
 
 const Projects = () => {
   return (
@@ -30,7 +54,7 @@ const Projects = () => {
                 transition={{duration: 1.5}}
                 className="w-full max-w-xl lg:w-3/4">
                     <h3 className="mb-2 font-semibold text-2xl">{project.title}</h3>
-                    <p className="mb-4 text-stone-400">{project.description}</p>
+                    <ProjectDescription description={project.description} />
                     {project.technologies.map((tech, index) => (
                         <span className="mr-2 rounded bg-stone-900 p-2
                         text-sm font-medium text-stone-300" key={index}>{tech}</span>

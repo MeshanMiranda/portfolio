@@ -24,6 +24,16 @@ export const EXPERIENCES = [
   },
 ];
 
+export const EDUCATIONS = [
+  {
+    year: "2023 - 2024",
+    role: "Graphic Designer",
+    company: "Fiverr.com",
+    description: `Worked as a freelance graphic designer creating logos, social media content, posters, and branding materials for clients on Fiverr. Delivered creative and visually appealing designs tailored to client needs using tools like Photoshop, Illustrator, and Canva.`,
+    technologies: ["Photoshop", "Illustrator", "Canva"],
+  },
+];
+
 export const PROJECTS = [
   {
     title: "Auditorium Seat Booking System",
