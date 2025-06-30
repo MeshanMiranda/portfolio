@@ -26,11 +26,25 @@ export const EXPERIENCES = [
 
 export const EDUCATIONS = [
   {
+    year: "2025 Present",
+    title: "BSc (Hons) in Computer Science",
+    university: "University of Bedfordshire, UK",
+    cgpa: "",
+    description: "I am currently a 3rd-year student pursuing a BSc (Hons) in Computer Science, gaining expertise in programming, algorithms, software development, and other core computing disciplines. My academic journey has equipped me with strong problem-solving skills and hands-on experience in various technologies, preparing me for a future in the tech industry.",
+  },
+  {
+    year: "2023 - 2025",
+    title: "Higher Diploma in Information Technology",
+    university: "SLIIT City Uni - Colombo",
+    cgpa: "2.88/4.00",
+    description: "A passionate and driven 2nd-year Higher Diploma in Information Technology student with a strong foundation in programming, networking, and system development. Skilled in Python, Java, SQL, and web technologies, with hands-on experience in problem-solving, software development, and IT project collaboration. Eager to apply theoretical knowledge to real-world challenges and continuously expand expertise in emerging tech trends.",
+  },
+  {
     year: "2023 - 2024",
-    role: "Graphic Designer",
-    company: "Fiverr.com",
-    description: `Worked as a freelance graphic designer creating logos, social media content, posters, and branding materials for clients on Fiverr. Delivered creative and visually appealing designs tailored to client needs using tools like Photoshop, Illustrator, and Canva.`,
-    technologies: ["Photoshop", "Illustrator", "Canva"],
+    title: "Full Stack Developer Programme",
+    university: "University of Moratuwa – Sri Lanka",
+    cgpa: "3.06/4.00",
+    description: "Completed intensive training in the Trainee – Full Stack Developer Programme, gaining hands-on experience in both front-end and back-end technologies. Skilled in building responsive web applications using modern frameworks, databases, and APIs. Passionate about writing clean, efficient code and continuously expanding my knowledge in web development.",
   },
 ];
 

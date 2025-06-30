@@ -28,7 +28,7 @@ const Technologies = () => {
             initial={{opacity: 0, y: -100}}
             transition={{duration: 1.5}}
             className="text-center text-4xl ">Skills
-            <h3 className="text-center text-2xl mt-4 pt-4 border-t border-stone-800 overflow-hidden pb-2 md:pb-0">Languages</h3>
+            <h3 className="text-center text-2xl mt-8 pt-4 border-t border-stone-800 overflow-hidden pb-2 md:pb-0">Languages</h3>
         </motion.h2>
         <motion.div 
         whileInView={{opacity: 1, x: 0}}
@@ -106,7 +106,7 @@ const Technologies = () => {
             whileInView={{opacity: 1, y: 0}}
             initial={{opacity: 0, y: -100}}
             transition={{duration: 1.5}}
-            className="text-center text-2xl mt-4 pt-4 border-t border-stone-800 overflow-hidden pb-2 md:pb-0">Frameworks & Libraries
+            className="text-center text-2xl mt-8 pt-4 border-t border-stone-800 overflow-hidden pb-2 md:pb-0">Frameworks & Libraries
         </motion.h2>
         <motion.div 
         whileInView={{opacity: 1, x: 0}}
@@ -191,13 +191,12 @@ const Technologies = () => {
             </motion.div>
         </motion.div>  
 
-
         {/* Tools */}
         <motion.h2 
             whileInView={{opacity: 1, y: 0}}
             initial={{opacity: 0, y: -100}}
             transition={{duration: 1.5}}
-            className="text-center text-2xl mt-4 pt-4 border-t border-stone-800 overflow-hidden ">Tools
+            className="text-center text-2xl mt-8 pt-4 border-t border-stone-800 overflow-hidden ">Tools
         </motion.h2>
         <motion.div 
         whileInView={{opacity: 1, x: 0}}

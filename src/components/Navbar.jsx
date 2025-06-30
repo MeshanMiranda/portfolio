@@ -157,6 +157,7 @@ const Navbar = () => {
             className="flex flex-col mt-4 space-y-2 text-base font-medium md:hidden"
           >
             <li><a href="#hero" onClick={handleMobileNavClick} className="text-blue-500 hover:underline">Home</a></li>
+            <li><a href="#educations" onClick={handleMobileNavClick} className="text-white hover:text-blue-500">Educations</a></li>
             <li><a href="#technologies" onClick={handleMobileNavClick} className="text-white hover:text-blue-500">Skills</a></li>
             <li><a href="#projects" onClick={handleMobileNavClick} className="text-white hover:text-blue-500">Projects</a></li>
             <li><a href="#experience" onClick={handleMobileNavClick} className="text-white hover:text-blue-500">Experience</a></li>
@@ -179,6 +180,19 @@ const Navbar = () => {
               }`}
             >
               Home
+            </a>
+          </li>
+          <li>
+            <a
+              href="#educations"
+              onClick={handleNavClick}
+              className={`${
+                activeSection === "#educations"
+                  ? "text-blue-700 dark:text-blue-500"
+                  : "text-gray-900 dark:text-white hover:text-blue-700 dark:hover:text-blue-500"
+              }`}
+            >
+              Educations
             </a>
           </li>
           <li>

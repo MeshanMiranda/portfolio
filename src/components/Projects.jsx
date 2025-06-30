@@ -1,31 +1,42 @@
 import {PROJECTS} from "../constants"
-import { motion } from "framer-motion"
+import { motion, AnimatePresence } from "framer-motion"
 import { useState } from "react";
-
-const ProjectDescription = ({ description }) => {
-  const [expanded, setExpanded] = useState(false);
-
-  const toggleReadMore = () => setExpanded(!expanded);
-
-  return (
-    <div className="mb-4 text-stone-400">
-      <p className={`${expanded ? '' : 'line-clamp-3 md:line-clamp-none'}`}>
-        {description}
-      </p>
-
-      {/* Show toggle only on mobile */}
-      <button
-        onClick={toggleReadMore}
-        className="mt-2 text-blue-500 font-medium md:hidden"
-      >
-        {expanded ? 'Show less' : 'Read more'}
-      </button>
-    </div>
-  );
-};
 
 
 const Projects = () => {
+  const ProjectDescription = ({ description }) => {
+    const [expanded, setExpanded] = useState(false);
+
+    const toggleReadMore = () => setExpanded(!expanded);
+
+    return (
+      <div className="mb-4 text-stone-400">
+        <AnimatePresence initial={false}>
+          <motion.p
+            key={expanded ? 'expanded' : 'collapsed'}
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.3 }}
+            className={`${expanded ? '' : 'line-clamp-3 md:line-clamp-none'}`}
+          >
+            {description}
+          </motion.p>
+        </AnimatePresence>
+
+        <motion.button
+          onClick={toggleReadMore}
+          className="mt-2 text-blue-500 font-medium md:hidden"
+          whileTap={{ scale: 0.95 }}
+          whileHover={{ scale: 1.05 }}
+          transition={{ type: "spring", stiffness: 300 }}
+        >
+          {expanded ? 'Show less' : 'Read more'}
+        </motion.button>
+      </div>
+    );
+  };
+
   return (
     <div className="pb-4 pt-[5px]">
       <motion.h2 

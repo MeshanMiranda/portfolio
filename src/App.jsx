@@ -4,6 +4,7 @@ import Technologies from "./components/Technologies"
 import Projects from "./components/Projects"
 import Experience from "./components/Experience"
 import Contact from "./components/Contact"
+import Educations from "./components/Educations"
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         </div>
         <div className="container mx-auto">
           <div id="hero"><Hero /></div>
+          <div id="educations"><Educations /></div>
           <div id="technologies"><Technologies /></div>
           <div id="projects"><Projects /></div>
           <div id="experience"><Experience /></div>
