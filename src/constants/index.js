@@ -133,5 +133,5 @@ export const PROJECTS = [
 export const CONTACT = {
   address: "Kandathoduwawa, Madurankuliya",
   phoneNo: "+94764315233",
-  email: "prashansamm200327@gmail.com",
+  email: "meshanmiranda@gmail.com",
 };
