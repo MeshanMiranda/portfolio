@@ -86,7 +86,7 @@ const Hero = () => {
                 <motion.span variants={childVariants} className="bg-gradient-to-r from-stone-300 
                 to-stone-600 bg-clip-text text-3xl tracking-tighter text-transparent">Software Engineer</motion.span>
                 <motion.p variants={childVariants} className="my-2 max-w-lg py-6 text-xl leading-relaxed tracking-tighter"><ProjectDescription description={HERO_CONTENT} /></motion.p>
-                <motion.a variants={childVariants} href="https://drive.google.com/file/d/1oQ2NSDHumm8GV7ThWraTQNUGFmcovxIz/view?usp=sharing"
+                <motion.a variants={childVariants} href="https://drive.google.com/file/d/1lu51gqqM97acyP5aO_tKJzV42Aqx70WU/view?usp=sharing"
                     target="_blank"
                     rel="noopener noreferrer"
                     download
