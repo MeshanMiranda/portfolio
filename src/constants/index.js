@@ -9,18 +9,26 @@ import project8 from "../assets/projects/pro9.png";
 import project9 from "../assets/projects/pro10.png";
 import project10 from "../assets/projects/pro11.png";
 import project11 from "../assets/projects/pro12.png";
+import project12 from "../assets/projects/pro13.png";
 
-export const HERO_CONTENT = `I’m currently enrolling in a BSc (Hons) in Computer Science at SLIIT, specializing in Software Engineering. I’m deeply passionate about Java development and web technologies, with hands-on experience in Java, C#, Python, and various web development languages and frameworks. Over the course of my studies, I’ve successfully completed multiple university and personal projects, including web-based systems and desktop applications, which have strengthened both my technical and problem-solving skills.`;
+export const HERO_CONTENT = `I’m currently enrolling in a BSc (Hons) in Computer Science at SLIIT, specializing in Software Engineering. I’m deeply passionate about Java development and web technologies, with hands-on experience in Java, C#, Python, Flutter, and various web development languages and frameworks. Over the course of my studies, I’ve successfully completed multiple university and personal projects, including web-based systems and desktop applications, which have strengthened both my technical and problem-solving skills.`;
 
 export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer with a passion for creating efficient and user-friendly web applications. With 5 years of professional experience, I have worked with a variety of technologies, including React, Next.js, Node.js, MySQL, PostgreSQL, and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.`;
 
 export const EXPERIENCES = [
   {
-    year: "2023 - 2024",
-    role: "Graphic Designer",
-    company: "Fiverr.com",
-    description: `Worked as a freelance graphic designer creating logos, social media content, posters, and branding materials for clients on Fiverr. Delivered creative and visually appealing designs tailored to client needs using tools like Photoshop, Illustrator, and Canva.`,
-    technologies: ["Photoshop", "Illustrator", "Canva"],
+    year: "Mar 2026 - Present",
+    role: "Associate Software Engineer",
+    company: "Genius Soft (Pvt) Ltd",
+    description: `Working on Java POS systems and Flutter web systems. Experienced in MySQL database management, bug fixing, and system maintenance. Contributed to improving system and database performance while applying problem-solving and critical thinking skills.`,
+    technologies: ["Java", "Flutter", "MySQL", "GitLab"],
+  },
+  {
+    year: "Sep 2025 - Mar 2026",
+    role: "Software Engineer - Intern",
+    company: "Genius Soft (Pvt) Ltd",
+    description: `Worked on developing Java based POS and ERP systems. Experienced in working with MySQL databases, iReport, and internal system testing. Assisted in bug fixing and improving system functionality.`,
+    technologies: ["Java", "MySQL", "iReport", "GitLab"],
   },
 ];
 
@@ -50,11 +58,10 @@ export const EDUCATIONS = [
 
 export const PROJECTS = [
   {
-    title: "Auditorium Seat Booking System",
-    image: project1,
-    description:
-      "A smart seating system designed for a university auditorium with a C-shaped layout. It optimizes seat allocation for events like TED Talks and lectures, ensuring VIPs and accessible needs are prioritized, groups sit together, and solo attendees aren't isolated. Admins can manually override seating rules when needed.",
-    technologies: ["HTML", "JavaScript", "Bootsrap", "PHP", "MySQL"],
+    title: "Dheewarayo - AI Powered Weather Prediction Mobile App",
+    image: project12,
+    description: "Dheewarayo is an AI-powered mobile application designed to enhance the safety, awareness and connectivity of fishermen in Sri Lanka. The app provides real-time weather alerts, marine forecasts, safe fishing zones, AI-driven fishing insights and a trusted community platform. My mission is to reduce risks at sea and strengthen the fisherman community through technology.",
+    technologies: ["Flutter", "Firebase", "Python", "TensorFlow", "FastAPI"],
   },
   {
     title: "Hotel Management System",
@@ -62,6 +69,13 @@ export const PROJECTS = [
     description:
       "As part of a university group project, I contributed to the development of a Hotel Management System using NetBeans (Java), JasperReports (iReport), and SQL. My responsibilities included: Rooms Management: Implemented features to manage room details, availability, and booking status. Supplier Management: Developed modules to handle supplier records, purchase tracking, and communication.",
     technologies: ["Java", "NetBeans", "MySQL", "Java Swing"],
+  },
+  {
+    title: "Auditorium Seat Booking System",
+    image: project1,
+    description:
+      "A smart seating system designed for a university auditorium with a C-shaped layout. It optimizes seat allocation for events like TED Talks and lectures, ensuring VIPs and accessible needs are prioritized, groups sit together, and solo attendees aren't isolated. Admins can manually override seating rules when needed.",
+    technologies: ["HTML", "JavaScript", "Bootsrap", "PHP", "MySQL"],
   },
   {
     title: "User Management System - MERN",
@@ -98,7 +112,7 @@ export const PROJECTS = [
       "The Travel Guide App is a mobile application designed and developed using Android Studio and integrated APIs to provide users with a comprehensive travel experience. It offers essential travel information, including popular destinations, local attractions, real-time navigation, and user-friendly features, ensuring an enriching and seamless journey.",
     technologies: ["Android Studio", "Java", "XML", "Firebase"],
   },
-  
+
   {
     title: "Loan Management System - C#",
     image: project7,
@@ -113,7 +127,7 @@ export const PROJECTS = [
       "I developed a Restaurant POS (Point of Sale) System using Java in NetBeans IDE. This system allows restaurant staff to manage orders, generate bills, handle payments, and track sales efficiently. It includes features such as a user-friendly interface, item categorization, real-time order updates, and a printed receipt generation.",
     technologies: ["Java", "OOP", "NetBeans", "MySQL", "Java Swing"],
   },
-  
+
   {
     title: "RS Seafood Supplier - POS System",
     image: project10,
@@ -131,7 +145,7 @@ export const PROJECTS = [
 ];
 
 export const CONTACT = {
-  address: "Kandathoduwawa, Madurankuliya",
+  address: "Negombo, Sri Lanka",
   phoneNo: "+94764315233",
   email: "meshanmiranda@gmail.com",
 };

@@ -18,10 +18,10 @@ const App = () => {
         </div>
         <div className="container mx-auto">
           <div id="hero"><Hero /></div>
+          <div id="experience"><Experience /></div>
           <div id="educations"><Educations /></div>
           <div id="technologies"><Technologies /></div>
           <div id="projects"><Projects /></div>
-          <div id="experience"><Experience /></div>
           <div id="contact"><Contact /></div>
         </div>
       </div>
