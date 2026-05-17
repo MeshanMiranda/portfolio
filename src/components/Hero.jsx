@@ -84,7 +84,7 @@ const Hero = () => {
             className="flex flex-col items-center lg:items-start mt-10">
             <motion.h2 variants={childVariants} className="pb-2 text-4xl tracking-tighter font-semibold lg:text-8xl">Meshan Miranda</motion.h2>
             <motion.span variants={childVariants} className="bg-gradient-to-r from-stone-300 
-                to-stone-600 bg-clip-text text-3xl tracking-tighter text-transparent">Software Engineer</motion.span>
+                to-stone-600 bg-clip-text text-3xl tracking-tighter text-transparent">Associate Software Engineer</motion.span>
             <motion.p variants={childVariants} className="my-2 max-w-lg py-6 text-xl leading-relaxed tracking-tighter"><ProjectDescription description={HERO_CONTENT} /></motion.p>
             <motion.a variants={childVariants} href="https://drive.google.com/file/d/1dY_3UBQ8JMJYRH6b_natjVPXpvUMv9gj/view?usp=sharing"
               target="_blank"
