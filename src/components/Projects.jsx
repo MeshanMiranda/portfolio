@@ -52,12 +52,14 @@ const Projects = () => {
               initial={{ opacity: 0, x: -100 }}
               transition={{ duration: 1 }}
               className="w-full lg:w-1/4">
-              <img src={project.image}
-                width={250}
-                height={250}
-                alt={project.title}
-                className="mb-6 rounded"
-              />
+              <a href={project.link} target="_blank" rel="noopener noreferrer">
+                <img src={project.image}
+                  width={250}
+                  height={250}
+                  alt={project.title}
+                  className="mb-6 rounded cursor-pointer"
+                />
+              </a>
             </motion.div>
             <motion.div
               whileInView={{ opacity: 1, x: 0 }}

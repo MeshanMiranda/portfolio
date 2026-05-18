@@ -62,6 +62,7 @@ export const PROJECTS = [
     image: project12,
     description: "Dheewarayo is an AI-powered mobile application designed to enhance the safety, awareness and connectivity of fishermen in Sri Lanka. The app provides real-time weather alerts, marine forecasts, safe fishing zones, AI-driven fishing insights and a trusted community platform. My mission is to reduce risks at sea and strengthen the fisherman community through technology.",
     technologies: ["Flutter", "Firebase", "Python", "TensorFlow", "FastAPI"],
+    link: "https://drive.google.com/file/d/1AMOP3UTUK2PEoZ1RC-TdthU5SLxsZjV7/view?usp=sharing",
   },
   {
     title: "Hotel Management System",
@@ -69,6 +70,7 @@ export const PROJECTS = [
     description:
       "As part of a university group project, I contributed to the development of a Hotel Management System using NetBeans (Java), JasperReports (iReport), and SQL. My responsibilities included: Rooms Management: Implemented features to manage room details, availability, and booking status. Supplier Management: Developed modules to handle supplier records, purchase tracking, and communication.",
     technologies: ["Java", "NetBeans", "MySQL", "Java Swing"],
+    link: "https://github.com/MeshanMiranda/Hotel-Management-System",
   },
   {
     title: "Auditorium Seat Booking System",
@@ -76,6 +78,7 @@ export const PROJECTS = [
     description:
       "A smart seating system designed for a university auditorium with a C-shaped layout. It optimizes seat allocation for events like TED Talks and lectures, ensuring VIPs and accessible needs are prioritized, groups sit together, and solo attendees aren't isolated. Admins can manually override seating rules when needed.",
     technologies: ["HTML", "JavaScript", "Bootsrap", "PHP", "MySQL"],
+    link: "https://github.com/MeshanMiranda/Auditorium-Seat",
   },
   {
     title: "User Management System - MERN",
@@ -90,6 +93,7 @@ export const PROJECTS = [
     description:
       "I created a website for Prashansa Caters using HTML, CSS, Bootstrap, PHP, and MySQL. The website features a user-friendly design, showcasing the company’s services and offerings. It includes dynamic elements for easy navigation and seamless interaction, with a MySQL database for efficient data management.",
     technologies: ["HTML", "JavaScript", "Bootsrap", "PHP", "MySQL"],
+    link: "https://github.com/MeshanMiranda/Prashansa-Caters-Website",
   },
   {
     title: "Personal Portfolio Website",
@@ -104,6 +108,7 @@ export const PROJECTS = [
     description:
       "A Student Record Management System (SRMS) is a software application designed to manage and store student data efficiently. It is used by educational institutions to streamline the administration of student information, ensuring that data is accurate, secure, and easily accessible. Here's a detailed description of its key features and functionalities:",
     technologies: ["Node.Js", "HTML", "Ajax", "JQuery", "MongoDB"],
+    link: "https://github.com/MeshanMiranda/SRMS-NodeJs",
   },
   {
     title: "Travel Sri - Tourist Guide Android Application",
@@ -111,6 +116,7 @@ export const PROJECTS = [
     description:
       "The Travel Guide App is a mobile application designed and developed using Android Studio and integrated APIs to provide users with a comprehensive travel experience. It offers essential travel information, including popular destinations, local attractions, real-time navigation, and user-friendly features, ensuring an enriching and seamless journey.",
     technologies: ["Android Studio", "Java", "XML", "Firebase"],
+    link: "https://github.com/MeshanMiranda/TravelAppSriLanka",
   },
 
   {
