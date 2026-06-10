@@ -1,6 +1,6 @@
 git status
 git add .
-git commit -m "Modifed Navbar"
+git commit -m "Added project url"
 git push origin main
 
 npm run deploy

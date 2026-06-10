@@ -37,7 +37,7 @@ export const EDUCATIONS = [
     year: "2025 Present",
     title: "BSc (Hons) in Computer Science",
     university: "University of Bedfordshire, UK",
-    cgpa: "",
+    cgpa: "3.69/4.00  | Second Class, Upper Division",
     description: "I am currently a 3rd-year student pursuing a BSc (Hons) in Computer Science, gaining expertise in programming, algorithms, software development, and other core computing disciplines. My academic journey has equipped me with strong problem-solving skills and hands-on experience in various technologies, preparing me for a future in the tech industry.",
   },
   {
